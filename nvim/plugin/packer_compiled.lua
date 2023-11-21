@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/correalm/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/correalm/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/correalm/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/correalm/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["night-owl"] = {
+    loaded = true,
+    path = "/Users/correalm/.local/share/nvim/site/pack/packer/start/night-owl",
+    url = "https://github.com/oxfist/night-owl.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,

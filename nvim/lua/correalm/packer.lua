@@ -16,9 +16,14 @@ return require('packer').startup(function(use)
   use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} })
 
   use 'ThePrimeagen/harpoon'
+
+  -- themes
   use 'sainnhe/everforest'
+  use { "oxfist/night-owl.nvim", as = "night-owl" }
+
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
+  use 'lewis6991/gitsigns.nvim'
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
