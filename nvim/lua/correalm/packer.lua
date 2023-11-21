@@ -26,7 +26,10 @@ return require('packer').startup(function(use)
   use 'sainnhe/everforest'
   
   use 'lukas-reineke/indent-blankline.nvim'
-  
+ 
+  -- GIT
+  use 'lewis6991/gitsigns.nvim'
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
