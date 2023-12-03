@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use { "oxfist/night-owl.nvim", as = "night-owl" }
   use 'sainnhe/everforest'
+  use { 'rose-pine/neovim', as = 'rose-pine' }
   
   use 'lukas-reineke/indent-blankline.nvim'
  
