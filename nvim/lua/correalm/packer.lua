@@ -17,9 +17,13 @@ return require('packer').startup(function(use)
 
   use 'ThePrimeagen/harpoon'
 
+  use "lukas-reineke/indent-blankline.nvim"
+
   -- themes
   use 'sainnhe/everforest'
   use { "oxfist/night-owl.nvim", as = "night-owl" }
+  use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'folke/tokyonight.nvim' }
 
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
