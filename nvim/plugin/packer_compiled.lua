@@ -79,20 +79,10 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  everforest = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/everforest",
-    url = "https://github.com/sainnhe/everforest"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -123,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["night-owl"] = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/night-owl",
-    url = "https://github.com/oxfist/night-owl.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -164,10 +149,20 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  tokyo = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/tokyo",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-apm"] = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-apm",
+    url = "https://github.com/ThePrimeagen/vim-apm"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

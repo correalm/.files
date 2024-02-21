@@ -16,15 +16,14 @@ return require('packer').startup(function(use)
   use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} })
 
   use 'ThePrimeagen/harpoon'
+  use 'ThePrimeagen/vim-apm'
   use 'mbbill/undotree'
   
   use 'christoomey/vim-tmux-navigator'
 
   -- THEMES
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use { "oxfist/night-owl.nvim", as = "night-owl" }
-  use 'sainnhe/everforest'
   use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'folke/tokyonight.nvim', as = 'tokyo' }
 
   use 'lukas-reineke/indent-blankline.nvim'
  
