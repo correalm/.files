@@ -4,6 +4,4 @@ vim.keymap.set("n", "<leader>ti", "<cmd>:IBLToggle<CR>")
 vim.keymap.set("n", "<leader>l", "<cmd>:TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<leader>ç", "<cmd>:TmuxNavigateRight<CR>")
 
-vim.keymap.set("n", "<leader>t", "<cmd>:vsplit term://bash<CR>")
-
 

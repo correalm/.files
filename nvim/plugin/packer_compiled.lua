@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-apm",
     url = "https://github.com/ThePrimeagen/vim-apm"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
