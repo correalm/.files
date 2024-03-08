@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
  
   -- GIT
   use 'lewis6991/gitsigns.nvim'
+  use 'voldikss/vim-floaterm'
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
