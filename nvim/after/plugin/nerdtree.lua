@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>u", vim.cmd.NERDTreeToggle)
+vim.keymap.set("n", "<C-b>", vim.cmd.NERDTreeToggle)
