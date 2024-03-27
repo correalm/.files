@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  dracula = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/dracula",
+    url = "https://github.com/dracula/vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  nerdtree = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -168,11 +178,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
-  },
-  ["vim-tmux-navigator"] = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 

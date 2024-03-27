@@ -17,20 +17,19 @@ return require('packer').startup(function(use)
 
   use 'ThePrimeagen/harpoon'
   use 'ThePrimeagen/vim-apm'
-  use 'mbbill/undotree'
-  
-  use 'christoomey/vim-tmux-navigator'
 
   -- THEMES
   use { 'rose-pine/neovim', as = 'rose-pine' }
   use { 'folke/tokyonight.nvim', as = 'tokyo' }
+  use { 'dracula/vim', as = 'dracula' }
 
   use 'lukas-reineke/indent-blankline.nvim'
- 
+
   -- GIT
   use 'lewis6991/gitsigns.nvim'
   use 'voldikss/vim-floaterm'
 
+  use 'preservim/nerdtree'
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
