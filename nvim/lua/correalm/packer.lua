@@ -15,8 +15,12 @@ return require('packer').startup(function(use)
 
   use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} })
 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
   use 'ThePrimeagen/harpoon'
-  use 'ThePrimeagen/vim-apm'
 
   -- THEMES
   use { 'rose-pine/neovim', as = 'rose-pine' }
@@ -29,7 +33,6 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'voldikss/vim-floaterm'
 
-  use 'preservim/nerdtree'
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
