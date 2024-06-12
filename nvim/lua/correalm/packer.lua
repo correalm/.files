@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
   -- THEMES
   use { 'rose-pine/neovim', as = 'rose-pine' }
   use { 'folke/tokyonight.nvim', as = 'tokyo' }
-  use { 'dracula/vim', as = 'dracula' }
+  use 'Mofiqul/vscode.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
 
