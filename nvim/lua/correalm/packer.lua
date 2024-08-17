@@ -16,11 +16,11 @@ return require('packer').startup(function(use)
   use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} })
 
   use 'ThePrimeagen/harpoon'
+  use 'tpope/vim-surround'
+  use 'tpope/vim-fugitive'
 
   -- THEMES
-  use { 'rose-pine/neovim', as = 'rose-pine' }
-  use { 'folke/tokyonight.nvim', as = 'tokyo' }
-  use 'Mofiqul/vscode.nvim'
+  use 'olivercederborg/poimandres.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
 
