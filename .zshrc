@@ -100,6 +100,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# tmux
+alias td="tmux detach"
+alias tas="tmux attach-session -t $1"
+
+# git
+alias g="git"
+alias gs="git status"
+alias gai="git add -i"
+
 # android
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
