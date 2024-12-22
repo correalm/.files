@@ -116,7 +116,7 @@ alias tas="tmux attach-session -t $1"
 alias g="git"
 alias gs="git status"
 alias gai="git add -i"
-alias gl="git log"
+alias gl="git log --oneline"
 
 # android
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
