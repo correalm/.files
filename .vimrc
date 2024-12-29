@@ -21,8 +21,11 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 nnoremap <silent> <C-p> :FuzzyGitFiles<CR>
+nnoremap <leader>ps :FuzzyGrep<CR>
 
 nnoremap <silent> <leader>gs :G<CR>
 
 nnoremap <silent> <leader>pv :Ex<CR>
 nnoremap <silent> <leader>e :Vex<CR>
+nnoremap <silent> <C-d> <C-d>zz<CR>
+nnoremap <silent> <C-u> <C-u>zz<CR>
