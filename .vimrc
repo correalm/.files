@@ -17,14 +17,12 @@ set hlsearch
 set ruler
 highlight Comment ctermfg=green
 
-set background=dark
-
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 nnoremap <silent> <C-p> :FuzzyGitFiles<CR>
 
-nnoremap <silent> <C-g> :G<CR>
+nnoremap <silent> <leader>gs :G<CR>
 
 nnoremap <silent> <leader>pv :Ex<CR>
 nnoremap <silent> <leader>e :Vex<CR>
