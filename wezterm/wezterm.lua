@@ -1,10 +1,6 @@
--- Pull in the wezterm API
 local wezterm = require 'wezterm'
 
--- This will hold the configuration.
 local config = wezterm.config_builder()
-
--- This is where you actually apply your config choices
 
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 13.0
@@ -17,5 +13,17 @@ config.window_padding = {
   bottom = 0,
 }
 
--- and finally, return the configuration to wezterm
+config.keys = {
+  {
+    key = '"',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+  },
+  {
+    key = '%',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+  }
+}
+
 return config
