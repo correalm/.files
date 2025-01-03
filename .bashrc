@@ -64,6 +64,7 @@ export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/tools/bin"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:/usr/local/protobuf/bin"
 
 export CLICOLOR=2
 export PS1='\[\033[1;32m\]\u\[\033[0m\]@\h \W$(__git_ps1 " (%s)") \$ '
