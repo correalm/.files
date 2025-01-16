@@ -54,6 +54,9 @@ fi
 
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
+
 export PATH=$PATH:~/.local/bin
 export NVM_DIR="$HOME/.nvm"
 
@@ -65,6 +68,7 @@ export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/tools/bin"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:/usr/local/protobuf/bin"
+export PATH=$PATH:$(go env GOPATH)/bin
 
 export CLICOLOR=2
 export PS1='\[\033[1;32m\]\u\[\033[0m\]@\h \W$(__git_ps1 " (%s)") \$ '
@@ -85,3 +89,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+function better_history {
+  local result=$(history | fzf)
+  local command=""
+
+  IFS=" " read -r -a arr <<< $result
+
+  echo "${arr[@]:1}"
+}
+
+function farmbox {
+  cd $HOME/projects/farmbox
+}
+
+function farmbox-mobile {
+  cd $HOME/projects/farmbox-mobile
+}
