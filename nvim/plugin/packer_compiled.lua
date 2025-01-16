@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/correalm/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1692716794/share/lua/5.1/?/init.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1692716794/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/correalm/.cache/nvim/packer_hererocks/2.1.1692716794/lib/lua/5.1/?.so"
+local package_path_str = "/home/correalm/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/correalm/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/correalm/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  dracula = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/dracula",
-    url = "https://github.com/dracula/vim"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -109,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -123,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  neovim = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -139,12 +134,6 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -155,25 +144,30 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
+  ["poimandres.nvim"] = {
     loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/poimandres.nvim",
+    url = "https://github.com/olivercederborg/poimandres.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  tokyo = {
-    loaded = true,
-    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/tokyo",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
