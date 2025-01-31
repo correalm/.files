@@ -62,6 +62,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
+export ADB="$ANDROID_HOME/platform-tools/adb"
 
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/tools"
@@ -69,9 +70,6 @@ export PATH="$PATH:$ANDROID_HOME/tools/bin"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:/usr/local/protobuf/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
-
-export CLICOLOR=2
-export PS1='\[\033[1;32m\]\u\[\033[0m\]@\h \W$(__git_ps1 " (%s)") \$ '
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -91,7 +89,7 @@ if ! shopt -oq posix; then
 fi
 
 function better_history {
-  local result=$(history | fzf)
+  local result=$(history | sort | fzf)
   local command=""
 
   IFS=" " read -r -a arr <<< $result
