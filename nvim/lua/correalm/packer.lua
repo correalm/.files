@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   -- THEMES
   use 'olivercederborg/poimandres.nvim'
   use 'rose-pine/neovim'
+  use 'vague2k/vague.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
 

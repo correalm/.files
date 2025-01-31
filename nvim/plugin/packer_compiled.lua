@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vague.nvim"] = {
+    loaded = true,
+    path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vague.nvim",
+    url = "https://github.com/vague2k/vague.nvim"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/correalm/.local/share/nvim/site/pack/packer/start/vim-floaterm",
