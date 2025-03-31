@@ -104,3 +104,7 @@ function farmbox {
 function farmbox-mobile {
   cd $HOME/projects/farmbox-mobile
 }
+function adb-restart {
+  adb kill-server && \
+  adb start-server
+}
