@@ -97,6 +97,10 @@ function better_history {
   echo "${arr[@]:1}"
 }
 
+function gsw {
+  git switch $1 && git pull
+}
+
 function farmbox {
   cd $HOME/projects/farmbox
 }
@@ -104,6 +108,7 @@ function farmbox {
 function farmbox-mobile {
   cd $HOME/projects/farmbox-mobile
 }
+
 function adb-restart {
   adb kill-server && \
   adb start-server
