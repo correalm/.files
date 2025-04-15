@@ -113,3 +113,8 @@ function adb-restart {
   adb kill-server && \
   adb start-server
 }
+
+function android-studio {
+  /usr/local/android-studio/bin/studio
+}
+
