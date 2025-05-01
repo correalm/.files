@@ -9,4 +9,4 @@ vim.opt.shiftwidth = 2
 vim.opt.wrap = false
 
 vim.opt.colorcolumn = "120"
-vim.cmd.colorscheme("vague")
+vim.cmd.colorscheme("poimandres")
