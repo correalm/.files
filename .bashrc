@@ -70,11 +70,12 @@ export PATH="$PATH:$ANDROID_HOME/tools/bin"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:/usr/local/protobuf/bin"
 export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$HOME/dev/flutter/bin:$PATH"
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -s "/home/correalm/.jabba/jabba.sh" ] && source "/home/correalm/.jabba/jabba.sh"
+eval "$(~/.local/bin/mise activate)"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -117,4 +118,3 @@ function adb-restart {
 function android-studio {
   /usr/local/android-studio/bin/studio
 }
-
